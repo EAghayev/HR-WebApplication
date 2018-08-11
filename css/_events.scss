@@ -1,0 +1,121 @@
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    overflow: hidden;
+    outline: 0;
+    padding-right: 17px;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.45);
+    .modal-overlay{
+        display: none;
+        position: relative;
+        display: block;
+        max-width: 500px;   
+        margin: 28px auto;
+        .event-modal{
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+            background: white;
+            border-radius: 8px;
+            .modal-header{
+                padding: 16px;
+                border-bottom: 1px solid #e9ecef;
+                h3{
+                    color: $darkgray-color;
+                    font-size: 26px;
+                }
+            }
+            form{
+                .form-content{
+                    padding: 16px;
+                    padding-bottom: 0;
+                }
+                input{
+                    font-size: 14px;
+                }
+                .event-add-buttons{
+                    border-top: 1px solid #e9ecef;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 16px;
+                    button{
+                        margin-left: 8px;
+                        font-size: 14px;
+                    }
+                }
+              
+            }
+        }
+    }
+}
+#main-content{
+   
+    #calendar{
+
+    }
+    .add-event{
+        margin-bottom: 30px;
+        border-radius: 8px;
+        padding: 20px;
+        background: white;
+        button{
+            font-size: 14px;
+            width: 100%;    
+        }
+    }
+    .events{
+        border-radius: 8px;
+        margin-bottom: 30px;
+        // padding: 20px;
+        background: white;
+        .events-list{
+            padding: 0;
+            li{
+                display: flex;
+                .date{
+                    padding-top: 20px;
+                    padding-left: 20px;
+                    .day{
+                        display: block;
+                        font-weight: 600;
+                        font-size: 22px;
+                    }
+                    .month{
+                        display: block;
+                        font-size: 12px;
+                    }
+                    .year{
+                        display: block;
+                        font-size: 12px;
+
+                    }
+                }
+                .event-content{
+                    padding: 20px;
+                    h4{
+                        margin: 0;
+                        text-transform: capitalize;
+                        font-size: 16px;
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 14px;
+                    }
+                    small{
+                        font-size: 11px;    
+                        i{
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

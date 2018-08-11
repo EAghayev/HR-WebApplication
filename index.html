@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+    <link rel="stylesheet" href="charts/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+    <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <link rel="stylesheet" href="charts/mychartist.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="navbar-toggle">
+                <button class="btn">
+                    <i class="fas fa-bars"></i>
+                    </icon>
+                </button>
+            </div>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="">
+            </a>
+            <div class="navbar-right navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0 my-search-form">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
+                    <button class="btn btn-outline-success  my-2 my-sm-0" type="submit">
+                        <i class="icon-magnifier"></i>
+                    </button>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-calendar"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-bubbles"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  new-notification" href="#">
+                            <i class="icon-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mynav-dropdown">
+                        <a class="nav-link new-notification bell-toggle mynav-toggler-btn" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="icon-bell mynav-toggler-btn-icon"></i>
+                        </a>
+                        <ul class="bell-menu nav-toggle-menu">
+                            <li>
+                                <div class="bell-heading">
+                                    <strong>You have 4 new Notification</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-info text-warning"></i>
+                                    <div class="bell-text">
+                                        <p class="text">Campaign
+                                            <strong> Holiday Sale</strong> is nearly reach budget limit.</p>
+                                        <span>10:00 AM Today </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-like text-success"></i>
+                                    <div class="bell-text">
+                                        <p class="text">Your new campaign
+                                            <strong> Holiday Sale</strong> is approved.</p>
+                                        <span>11:30 AM Today </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-pie-chart text-info"></i>
+                                    <div class="bell-text">
+                                        <p class="text">Website visit from Twitter is 27% higher than last week.
+                                            <strong></strong>
+                                        </p>
+                                        <span>04:00 PM Today </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+
+                                <a href="#">
+                                    <i class="icon-info text-danger"></i>
+                                    <div class="bell-text">
+                                        <p class="text">Error on website analytics configurations.
+                                            <strong></strong>
+                                        </p>
+                                        <span>Yesterday</span>
+                                    </div>
+
+                                </a>
+                                </l i>
+                                <li class="pb-0">
+                                    <a href="#">
+                                        See all notifications</a>
+                                </li>
+                        </ul>
+                        </li>
+                        <li class="nav-item mynav-dropdown">
+                            <a class="nav-link equalizer-toggle mynav-toggler-btn" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-equalizer mynav-toggler-btn-icon"></i>
+                            </a>
+                            <ul class="equalizer-menu nav-toggle-menu">
+                                <li class="menu-heading">
+                                    <h6>ACCOUNT SETTINGS</h6>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-note"></i>Basic</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-equalizer"></i>Perference</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-lock"></i>Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pb-0">
+                                        <i class="icon-bell"></i>Notification</a>
+                                </li>
+                                <li class="menu-heading">
+                                    <h6>BILLING</h6>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-credit-card"></i>Payments</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-printer"></i>Invoice</a>
+                                </li>
+                                <li class="pb-0">
+                                    <a href="#">
+                                        <i class="icon-refresh"></i>Renewals</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="icon-login"></i>
+                            </a>
+                        </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="sidebar">
+            <div class="account">
+                <div class="account-top">
+                    <div class="profile-photo">
+                        <img src="images/profile.png" alt="">
+                    </div>
+                    <div class="account-dropdown">
+                        <span>Welcome,</span>
+                        <a href="#" class="sidebar-account-toggler">
+                            <strong>Jessica Doe</strong>
+                        </a>
+                        <ul class="account-dropdown-menu sidebar-account-toggle-menu">
+                            <li>
+                                <a href="#">
+                                    <i class="icon-user"></i>My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-envelope"></i>Messages</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-settings"></i>Settings</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-power"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="account-bottom">
+                    <div class="account-count">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="account-count-item">
+                                    <span>5+</span>
+                                    <small>Experience</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="account-count-item">
+                                    <span>400+</span>
+                                    <small>Employees</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="account-count-item">
+                                    <span>80+</span>
+                                    <small>Clients</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="sidebar-menu">
+                <ul class="menu-bar">
+                    <li>
+                        <a href="#">HR</a>
+                    </li>
+                    <li>
+                        <a href="#">Project</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-grid"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidebar-main-menu">
+                    <li>
+                        <a href="#" class="active">
+                            <i class="icon-speedometer"></i> HR Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-list"></i> Holidays</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-calendar"></i> Events</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-badge"></i> Activities</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-dropdown-toggle">
+                            <i class="icon-people"></i> Employees
+                            <i class="icon-arrow-left sidemenu-dropdown"></i>
+                        </a>
+                        <ul class="sidebar-dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <span>--</span>All Employees</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Leave Requests</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Attendance</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Departments</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-dropdown-toggle">
+                            <i class="icon-briefcase"></i> Accounts
+                            <i class="icon-arrow-left sidemenu-dropdown"></i>
+                        </a>
+                        <ul class="sidebar-dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Payments</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Expenses</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Invoices</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-dropdown-toggle">
+                            <i class="icon-people"></i> Payroll
+                            <i class="icon-arrow-left sidemenu-dropdown"></i>
+                        </a>
+                        <ul class="sidebar-dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Payslip</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Employee Salary</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-chart"></i> Report</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-user"></i> Users</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-lock"></i> Authentication</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="main-content">
+            <div class="container-fluid myfluid">
+                <div class="main-content-header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="now-action">
+                                <h2>
+                                    <i class="fas fa-arrow-left sidebar-arrow"></i>Dashboard</h2>
+                                <u class="breadcrumbs">
+                                    <li>
+                                        <i class="icon-home"></i>
+                                    </li>
+                                    <li>
+                                        <span>/</span>
+                                    </li>
+                                    <li>
+                                        <span>Dashboard</span>
+                                    </li>
+                                </u>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="content-header-charts">
+                                <div class="header-chart">
+                                    <div class="chart-info">
+                                        <span>VISITORS</span>
+                                        <h6>
+                                            <i class="icon-user"></i>
+                                            1,784
+                                        </h6>
+                                    </div>
+                                    <!-- <div class="main-chart" >
+                                        <canvas id="chart-visitors" style="width: 160px"></canvas>
+                                    </div> -->
+                                    <span id="sparkline-visitors" class="sparkline" >&nbsp;</span>
+                                </div>
+                                <div class="header-chart">
+                                    <div class="chart-info">
+                                        <span>VISITS</span>
+                                        <h6>
+                                            <i class="icon-globe"></i>
+                                            325
+                                        </h6>
+                                    </div>
+                                    <!-- <div class="main-chart" >
+                                        <canvas id="chart-visitors" style="width: 160px"></canvas>
+                                    </div> -->
+                                    <span id="sparkline-visits" class="sparkline">&nbsp;</span>
+                                </div>
+                                <div class="header-chart">
+                                    <div class="chart-info">
+                                        <span>CHATS</span>
+                                        <h6>
+                                            <i class="icon-bubbles"></i>
+                                            13
+                                        </h6>
+                                    </div>
+                                    <!-- <div class="main-chart" >
+                                        <canvas id="chart-visitors" style="width: 160px"></canvas>
+                                    </div> -->
+                                    <span id="sparkline-chats" class="sparkline">&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-items">
+                    <div class="row clearfix">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="content-counters">
+                                        <div class="counter-box">
+                                            <div class="counter">
+                                                <i class="fas fa-user"></i>
+                                                <h6>New Employees
+                                                    <span>22</span>
+                                                </h6>
+                                            </div>
+                                            <hr>
+                                            <div class="counter">
+                                                <i class="fas fa-users"></i>
+                                                <h6>Total Employees
+                                                    <span>425</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="counter-box" style="margin-top:30px;">
+                                            <div class="counter">
+                                                <i class="fas fa-university"></i>
+                                                <h6>New Employees
+                                                    <span>22</span>
+                                                </h6>
+                                            </div>
+                                            <hr>
+                                            <div class="counter">
+                                                <i class="fas fa-university"></i>
+                                                <h6>Total Employees
+                                                    <span>425</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="mystacked-bar">
+                                <div class="mystacked-bar-header">
+                                    <span>Salary Statistics </span>
+                                    <ul class="mystacked-buttons">
+                                        <li>
+                                            <a href="#">W</a>
+                                            <span>Weekly</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">M</a>
+                                            <span>Monthly</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="active">Y</a>
+                                            <span>Yearly</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="ct-chart ct-perfect-fourth" id="exampleStackedBar"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-8 col-md-12">
+                            <div class="total-salary-chart">
+                                <div class="line-chart-header">
+                                    <span>Total Salary by Unit </span>
+                                    <ul class="line-chart-buttons">
+                                        <li>
+                                            <a href="#">W</a>
+                                            <span>Weekly</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">M</a>
+                                            <span>Monthly</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="active">Y</a>
+                                            <span>Yearly</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ct-chart" id="LineChart"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="to-do-box">
+                                <div class="to-do-header">
+                                    <h6>To Do List</h6>
+                                </div>
+                                <ul class="to-do-list">
+                                    <li>
+                                        <div class="pretty p-svg p-curve to-do-checkbox">
+                                            <input type="checkbox" />
+                                            <div class="state p-warning">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                                                        style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label>New Employee intro</label>
+                                            </div>
+                                        </div>
+                                        <span>SCHEDULED FOR 3:00 P.M. ON JUN 2018</span>
+                                    </li>
+                                    <li>
+                                        <div class="pretty p-svg p-curve to-do-checkbox">
+                                            <input type="checkbox" />
+                                            <div class="state p-warning">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                                                        style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label>Send email to CEO</label>
+                                            </div>
+                                        </div>
+                                        <span>SCHEDULED FOR 4:30 P.M. ON JUN 2018</span>
+                                    </li>
+                                    <li>
+                                        <div class="pretty p-svg p-curve to-do-checkbox">
+                                            <input type="checkbox" />
+                                            <div class="state p-warning">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                                                        style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label>New Joing Employee Welcome kit</label>
+                                            </div>
+                                        </div>
+                                    <ul>
+                                        <li><a href="#">Jhon Smith</a> Designer</li>
+                                        <li><a href="#">Hossein Shams</a> Developer</li>
+                                        <li><a href="#">Maryam Amiri</a> SEO</li>
+                                        <li><a href="#">Mike Literus</a> İOS Developer</li>
+
+                                    </ul>
+                                    </li>
+                                    <li>
+                                        <div class="pretty p-svg p-curve to-do-checkbox">
+                                            <input type="checkbox" />
+                                            <div class="state p-warning">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                                                        style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label>Birthday Wish</label>
+                                            </div>
+                                        </div>
+                                        <span>SCHEDULED FOR 3:00 P.M. ON JUN 2018</span>
+                                    </li>
+                                </ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-8 col-md-12">
+                            <div id="employee-table-section">
+                                <div class="employee-header">
+                                    Employee Performance
+                                </div>
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                                <th>Avatar</th>
+                                                <th>Name</th>
+                                                <th>Designation</th>
+                                                <th>Performance</th>
+                                                <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="images/xs/avatar1.jpg" alt=""></td>
+                                            <td>Marshall Nichols</td>
+                                            <td>UI UX Designer</td>
+                                            <td><span class="mybadge mybadge-success">GOOD</span></td>
+                                            <td><span class="sparkline-employee" data-id="1" class="sparkline" >&nbsp;</span></td>
+                                        </tr>
+                                        <tr>
+                                                <td><img src="images/xs/avatar1.jpg" alt=""></td>
+                                                <td>Marshall Nichols</td>
+                                                <td>UI UX Designer</td>
+                                                <td><span class="mybadge mybadge-primary">Excelent</span></td>
+                                                 <td><span class="sparkline-employee" data-id="2" class="sparkline" >&nbsp;</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="images/xs/avatar1.jpg" alt=""></td>
+                                            <td>Marshall Nichols</td>
+                                            <td>UI UX Designer</td>
+                                            <td><span class="mybadge mybadge-danger">WEAK</span></td>
+                                            <td><span class="sparkline-employee" data-id="3" class="sparkline" >&nbsp;</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/xs/avatar1.jpg" alt=""></td>
+                                        <td>Marshall Nichols</td>
+                                        <td>UI UX Designer</td>
+                                        <td><span class="mybadge mybadge-warning">AVERAGE</span></td>
+                                        <td><span class="sparkline-employee" data-id="4" class="sparkline" >&nbsp;</span></td>
+                                </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                                <div class="progress-bars">
+                                    <h6>Employee Structure</h6>
+                                        <div class="progress-bar-block">
+                                            <span>Male</span>
+                                                <div class="progress-circle" id="circle-first"  class="circle" data-value="0.9">
+                                                        <strong style=" color: rgb(73, 169, 229);"></strong>
+                                                    </div>
+                                                    <hr>
+                                        </div>
+                                       <div class="progress-bar-block">
+                                           <span>Female</span>
+                                            <div class="progress-circle"  id="circle-second" data-value="0.75">
+                                                    <strong style="color: rgb(184, 128, 225);"></strong>
+                                                </div>
+                                       </div>
+                                   
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--Chartist-->
+    <script src="charts/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/mychart.js"></script>
+    <!--ChartJs-->
+
+
+
+    <!-- sparklinejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.js"></script>
+    <script src="js/mysparklinecharts.js"></script>
+        <!--ProgressBar-->
+        <script src="jquery-circle-progress-1.2.2/dist/circle-progress.js"></script>
+        <script src="jquery-circle-progress-1.2.2/dist/circle-progress.min.js"></script>
+        <script src="jquery-circle-progress-1.2.2/docs/examples.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

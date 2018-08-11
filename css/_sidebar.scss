@@ -1,0 +1,282 @@
+#sidebar{
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    width: 250px;
+    display: inline-block;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    top: 5px;
+    left: 5px;
+    transition: all 0.4s;
+    margin-top: 58px;
+    overflow-x: auto;
+    background: #f4f7f6;
+    z-index: 9;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb:hover{
+        background: $gray-color;
+    }
+    .account{
+        align-items: center;
+        margin: 20px;
+        .account-top{
+            display: flex;
+            position: relative;
+            .profile-photo{
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                // border-radius: 50%;
+                img{
+                    border-radius: 100%;
+                }
+            }
+            .account-dropdown{
+                display: inline-block;
+                font-size: 14px;
+                margin-left: 13px;
+                margin-top: 5px;
+                span{
+                    display: block;
+                    color: $darkgray-color;
+                }
+                a{
+                    color: $darkgray-color;
+                    position: relative;
+                    display: block;
+                    &::after{
+                        content:"";
+                        width: 0;
+                        height: 0;
+                        margin-bottom: 4px;
+                        margin-left: 2px;
+                        display: inline-block;
+                        border: 4px solid $darkgray-color;
+                        border-right: 4px solid transparent;
+                        border-left: 4px solid transparent;
+                        border-bottom: none;
+                    }
+                }
+                .account-dropdown-menu{
+                    display: none;
+                    list-style: none;
+                    padding: 20px;
+                    border-radius: 10px;
+                    position: absolute;
+                    background: $black-color;
+                    margin-bottom: 0;
+                    top: 49px;
+                    right: -11px;
+                    width: 160px;
+                    z-index: 1; 
+                    animation-duration: 0.4s;
+                    animation-fill-mode: forwards;
+                    li{
+                        a{
+                            display: block;
+                            color: $gray-color;
+                            font-size:14px;
+                            font-weight: 500;
+                            padding: 10px;
+                            &::after{
+                                content: none;
+                            }
+                            i{
+                                margin-right: 10px;
+                                font-size: 14px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .account-bottom{
+            display: block;
+            .account-count{
+                .account-count-item{
+                    color: $darkgray-color;
+                    line-height: 18px !important;
+                    // line-height: 11px;
+                    span{
+                        font-weight: 500;
+                        margin-bottom: 0;
+                    }
+                    small{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+       
+    }
+    #sidebar-menu{
+        .menu-bar{
+            list-style: none;
+            border-bottom: 1px solid  $whitegray-color;
+            display: flex;
+            margin-bottom: 0;
+            padding:0;
+            margin:0;
+            .active{
+                border-bottom: 1px solid #f4f7f6;
+                a{
+                    border:1px solid $whitegray-color;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    color:#f68c1f;
+                    border-bottom: none;    
+                    margin-bottom:0px;
+                }
+            }
+            li{
+            margin-bottom: -1px;
+            // padding-bottom: 5px;
+           
+                a{
+                    text-decoration: none;
+                    display: inline-block;
+                    background: transparent;
+                    color: $darkgray-color;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin: 0 auto;
+                    border: 1px solid transparent;
+                    padding:8px 16px;
+                    margin: 0;
+                    &:hover{
+                        border:1px solid #dee2e6;
+                        // border-radius: 5px;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        border-bottom: none;
+                        // transition: all 0.3s;
+                    }
+                }
+            }
+        }
+        .sidebar-main-menu{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li{
+                padding-bottom: 4px;
+                position: relative;
+                &:first-child{
+                    margin-top: 15px;
+                }
+                a{
+                    border-left: 6px solid transparent;
+                    color: $black-color;
+                    font-size: 15px;
+                    padding: 13px;
+                    padding-left: 15px;
+                    display:flex;
+                    align-items: center;
+                    transition: all 0.3s;
+                    &:hover{
+                        background: #f1f1f1;
+                    }
+                    i{
+                        &:first-child{
+                            color:$orange-color;
+                            margin-right: 20px;
+                            font-size: 16px;
+                        }
+                    }
+                    .sidemenu-dropdown{
+                        color: #b5b5b5;
+                        float: right;
+                        font-size: 12px;
+                        animation-fill-mode:forwards;
+                        animation-duration: 0.5s;
+                        transition: all 0.5s;
+                    }
+                }
+                .active{
+                    // background: #f1f1f1; 
+                    border-left: 6px solid #f68c1f;
+                }
+            }
+            .sidebar-dropdown-toggle{
+                display: block;
+            }
+            .sidebar-dropdown-menu{
+                display: none;
+                padding: 0;
+                li{
+                    margin: 0;
+                    a{
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        padding-left: 0;
+                        color: $gray-color;
+                        font-size: 14px;
+                        span{
+                            padding: 0 25px;
+                        }
+                    }
+                }
+            }
+            .employees-menu{
+                li{
+                }
+            }
+        }
+    }
+}
+@keyframes sidebar-account{
+    from{
+        top: 34px;
+    }
+    to{
+        top: 49px;
+    }
+}
+@keyframes dropdown-icon{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(-90deg)
+    }
+}
+@keyframes icon-dropdown{
+    from{
+        transform: rotate(270deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+@keyframes sidebar-in{
+    from{
+        transform: translateX(0px)
+    }
+    to{
+        transform: translateX(-250px)
+    }
+}
+@keyframes sidebar-out{
+    from{
+        transform: translateX(-250px)
+    }
+    to{
+        transform: translateX(0px)
+    }
+}
+// .sidebar-in{
+//     animation-name: sidebar-in;
+// }
+// .sidebar-out{
+//     animation-name: sidebar-out;
+// }
+.dropdown-icon-animate{
+    animation-name:icon-dropdown;
+}
+.dropdown-animate-icon{
+    animation-name: dropdown-icon;
+}

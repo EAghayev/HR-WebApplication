@@ -1,0 +1,134 @@
+
+#exampleStackedBar{
+    height: 296px;
+}
+  .ct-chart{
+
+  }
+  .ct-perfect-fourth>svg{
+        position: relative;
+        height: 230px !important;
+  }
+  #LineChart>svg{
+      position: relative;
+      height: 305px !important;
+  }
+
+.ct-legend {
+    position: relative;
+    /* top: -30px; */
+    /* right: 0; */
+    /* display: inline-block; */
+    padding: 0;
+    z-index: 10;
+    list-style: none;
+    text-align: right;
+    font-size: 14px;
+}
+
+.ct-legend li {
+    position: relative;
+    padding-left: 18px;
+    margin-right: 14px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 13px;
+}
+
+.ct-legend li:before {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    content: '';
+    border: 3px solid transparent;
+    border-radius: 2px;
+    
+}
+
+.ct-legend li.inactive:before {
+    background: transparent;
+}
+
+.ct-legend li.ct-legend-inside {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#exampleStackedBar .ct-legend li.ct-series-0:before {
+    background-color: #3bafda;
+    border-color: #3bafda;
+}
+
+#exampleStackedBar .ct-legend li.ct-series-1:before {
+    background-color: #fc6e51;
+    border-color: #fc6e51;
+}
+#exampleStackedBar .ct-legend li.ct-series-2:before {
+    background-color: #ffce54;
+    border-color: #ffce54;
+}
+#exampleStackedBar  .ct-series-a .ct-bar{
+    stroke:#3bafda;   
+}
+#exampleStackedBar .ct-series-b .ct-bar{
+    stroke:#fc6e51;
+}
+#exampleStackedBar .ct-series-c .ct-bar{
+    stroke:#ffce54;
+}
+
+.ct-horizontal{
+    display: none;
+}
+.ct-start,.ct-end{
+    font-size: 14px;
+    color: #444;
+}
+
+.LineChart{
+   
+}
+#LineChart .ct-line {
+    stroke-width: 1px; 
+}
+#LineChart .ct-series-d .ct-line{
+    stroke: #F7964A;
+}
+#LineChart .ct-series-a .ct-line{
+    stroke: #c0504e;
+}
+#LineChart .ct-series-b .ct-line{
+    stroke: #4aacc7;
+}
+#LineChart .ct-series-c .ct-line{
+    stroke: #4f81be;
+}
+#LineChart .ct-series-e .ct-line{
+    stroke: #9bbb58;
+}
+#LineChart .ct-point{
+    stroke-width: 5px;
+}
+#LineChart .ct-legend li.ct-series-0:before{
+    background-color: #F7964A;
+    border-color: #F7964A;
+}
+#LineChart .ct-legend li.ct-series-1:before{
+    background-color: #4aacc7;
+    border-color: #4aacc7;
+}
+#LineChart .ct-legend li.ct-series-2:before{
+    background-color: #9bbb58;
+    border-color: #9bbb58;
+}
+#LineChart .ct-legend li.ct-series-3:before{
+    background-color: #c0504e;
+    border-color: #c0504e;
+}
+#LineChart .ct-legend li.ct-series-4:before{
+    background-color: #4f81be;
+    border-color: #4f81be;
+}

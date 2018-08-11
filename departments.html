@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+    <link rel="stylesheet" href="charts/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+    <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="charts/mychartist.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="navbar-toggle">
+                <button class="btn">
+                    <i class="fas fa-bars"></i>
+                    </icon>
+                </button>
+            </div>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="">
+            </a>
+            <div class="navbar-right navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0 my-search-form">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
+                    <button class="btn btn-outline-success  my-2 my-sm-0" type="submit">
+                        <i class="icon-magnifier"></i>
+                    </button>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-calendar"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-bubbles"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  new-notification" href="#">
+                            <i class="icon-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mynav-dropdown">
+                        <a class="nav-link new-notification bell-toggle mynav-toggler-btn" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="icon-bell mynav-toggler-btn-icon"></i>
+                        </a>
+                        <ul class="bell-menu nav-toggle-menu">
+                            <li>
+                                <div class="bell-heading">
+                                    <strong>You have 4 new Notification</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-info text-warning"></i>
+                                    <div class="bell-text">
+                                        <p class="text">Campaign
+                                            <strong> Holiday Sale</strong> is nearly reach budget limit.</p>
+                                        <span>10:00 AM Today </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-like text-success"></i>
+                                    <div class="bell-text">
+                                        <p class="text">Your new campaign
+                                            <strong> Holiday Sale</strong> is approved.</p>
+                                        <span>11:30 AM Today </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-pie-chart text-info"></i>
+                                    <div class="bell-text">
+                                        <p class="text">Website visit from Twitter is 27% higher than last week.
+                                            <strong></strong>
+                                        </p>
+                                        <span>04:00 PM Today </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+
+                                <a href="#">
+                                    <i class="icon-info text-danger"></i>
+                                    <div class="bell-text">
+                                        <p class="text">Error on website analytics configurations.
+                                            <strong></strong>
+                                        </p>
+                                        <span>Yesterday</span>
+                                    </div>
+
+                                </a>
+                                </l i>
+                                <li class="pb-0">
+                                    <a href="#">
+                                        See all notifications</a>
+                                </li>
+                        </ul>
+                        </li>
+                        <li class="nav-item mynav-dropdown">
+                            <a class="nav-link equalizer-toggle mynav-toggler-btn" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-equalizer mynav-toggler-btn-icon"></i>
+                            </a>
+                            <ul class="equalizer-menu nav-toggle-menu">
+                                <li class="menu-heading">
+                                    <h6>ACCOUNT SETTINGS</h6>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-note"></i>Basic</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-equalizer"></i>Perference</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-lock"></i>Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pb-0">
+                                        <i class="icon-bell"></i>Notification</a>
+                                </li>
+                                <li class="menu-heading">
+                                    <h6>BILLING</h6>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-credit-card"></i>Payments</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-printer"></i>Invoice</a>
+                                </li>
+                                <li class="pb-0">
+                                    <a href="#">
+                                        <i class="icon-refresh"></i>Renewals</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="icon-login"></i>
+                            </a>
+                        </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        
+        <div id="sidebar">
+            <div class="account">
+                <div class="account-top">
+                    <div class="profile-photo">
+                        <img src="images/profile.png" alt="">
+                    </div>
+                    <div class="account-dropdown">
+                        <span>Welcome,</span>
+                        <a href="#" class="sidebar-account-toggler">
+                            <strong>Jessica Doe</strong>
+                        </a>
+                        <ul class="account-dropdown-menu sidebar-account-toggle-menu">
+                            <li>
+                                <a href="#">
+                                    <i class="icon-user"></i>My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-envelope"></i>Messages</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-settings"></i>Settings</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-power"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="account-bottom">
+                    <div class="account-count">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="account-count-item">
+                                    <span>5+</span>
+                                    <small>Experience</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="account-count-item">
+                                    <span>400+</span>
+                                    <small>Employees</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="account-count-item">
+                                    <span>80+</span>
+                                    <small>Clients</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="sidebar-menu">
+                <ul class="menu-bar">
+                    <li>
+                        <a href="#">HR</a>
+                    </li>
+                    <li>
+                        <a href="#">Project</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-grid"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidebar-main-menu">
+                    <li>
+                        <a href="#" class="active">
+                            <i class="icon-speedometer"></i> HR Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-list"></i> Holidays</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-calendar"></i> Events</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-badge"></i> Activities</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-dropdown-toggle">
+                            <i class="icon-people"></i> Employees
+                            <i class="icon-arrow-left sidemenu-dropdown"></i>
+                        </a>
+                        <ul class="employees-menu sidebar-dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <span>--</span>All Employees</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Leave Requests</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Attendance</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Departments</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-dropdown-toggle">
+                            <i class="icon-briefcase"></i> Accounts
+                            <i class="icon-arrow-left sidemenu-dropdown"></i>
+                        </a>
+                        <ul class="employees-menu sidebar-dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Payments</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Expenses</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>--</span>Invoices</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-credit-card"></i> Payroll</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-chart"></i> Report</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-user"></i> Users</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-lock"></i> Authentication</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="main-content">
+            <div class="container-fluid myfluid">
+                <div class="main-content-header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="now-action">
+                                <h2>
+                                    <i class="fas fa-arrow-left sidebar-arrow"></i>Departments List</h2>
+                                <u class="breadcrumbs">
+                                    <li>
+                                        <i class="icon-home"></i>
+                                    </li>
+                                    <li>
+                                        <span>/</span>
+                                    </li>
+                                    <li>
+                                        <span>Employee</span>
+                                    </li>
+                                    <li>
+                                        <span>/</span>
+                                    </li>
+                                    <li>
+                                        <span>Departments List</span>
+                                    </li>
+                                </u>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="content-header-charts">
+                                <div class="header-chart">
+                                    <div class="chart-info">
+                                        <span>VISITORS</span>
+                                        <h6>
+                                            <i class="icon-user"></i>
+                                            1,784
+                                        </h6>
+                                    </div>
+                                    <div id="main-chart" >
+                                        <!-- <canvas id="chart-visitors" style="width: 160px"></canvas> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content-items">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="department-list">
+                                     
+                                           <table class="table table-striped table-bordered">
+                                               <thead>
+                                                   <tr>
+                                                      <th>#</th>
+                                                       <th>Department Name</th>
+                                                       <th>Department Head</th>
+                                                       <th>Total Employee</th>
+                                                       <th>Action</th>
+                                                   </tr>
+                                               </thead>
+                                               <tbody>
+                                                  
+                                                       <tr>
+                                                           <td>
+                                                               <span>01</span>
+                                                           </td>
+                                                               <td>
+                                                                   <h6>Web Development</h6>
+                                                                 
+                                                               </td>
+                                                               <td>
+                                                                   <span>John Smith</span>
+                                                               </td>
+                                                               <td>
+                                                                   <span>305</span>
+                                                               </td>
+                                                               
+                                                               <td>
+                                                                   <a href="#"><i class="far fa-edit"></i></a>
+                                                                   <a href="#"><i class="far fa-trash-alt"></i></a>
+                                                               </td>
+                                                         </tr>   
+                                                         <tr>
+                                                               <td>
+                                                                       <span>02</span>
+                                                                   </td>
+                                                               <td>
+                                                                   <h6>Marketing</h6>
+                                                                 
+                                                               </td>
+                                                               <td>
+                                                                       <span>Maryam Amiri</span>
+                                                                   </td>
+                                                                   <td>
+                                                                       <span>26</span>
+                                                                   </td>
+                                                               <td>
+                                                                   <a href="#"><i class="far fa-edit"></i></a>
+                                                                   <a href="#"><i class="far fa-trash-alt"></i></a>
+                                                               </td>
+                                                         </tr>                      
+                                               </tbody>
+                                           </table>
+                                           
+                                </div>
+                            
+                            </div>
+                        </div>   
+               </div>
+                </div>
+
+               
+                </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!--Chartist-->
+    <script src="charts/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.min.js"></script>
+    <script src="js/mychart.js"></script>
+    <!--ChartJs-->
+
+    <!--boorstarp dataTable-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

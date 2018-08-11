@@ -1,0 +1,133 @@
+.main{
+    #main-content{
+        .main-content-header{
+
+        }
+        .main-content-items{
+            #paylslip{
+                background: #fff;
+                margin-bottom: 26px;
+                border-radius: 8px;
+                padding: 20px;
+                .payslip-header{
+                    .logo{
+                        width: 70px;
+                        height: 70px;
+                    }
+                    .header-info{
+                        font-size: 14px;
+                        margin-left: 16px;
+                        margin-bottom: 16px;
+                       color: #444;
+                        span{
+                            display: block;
+                        }
+                    }
+                }   
+                .payslip-profile{
+                    display: flex;
+                    .profile-img{
+                        width: 70px;
+                        height: 70px;
+                        img{
+                            border-radius: 50%;
+                        }
+                    }
+                    .profile-info{
+                        font-size: 14px;
+                        margin-left: 16px;
+                        margin-bottom: 16px;
+                        color: #444;
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+                .payslip-content{
+                    table{
+                        thead{
+                            tr{
+                                th{
+
+                                }
+                            }
+                        }
+                        tbody{
+                            tr{
+                                font-size: 14px;
+                                &:last-child{
+                                    font-weight: 600;
+                                }
+                                td{
+
+                                }
+                            }
+                        }
+                    }
+                    .earnings{
+                        table{
+                            thead{
+                                tr{
+                                    th{
+                                        color: #fff;
+                                        background-color: #22af46;
+                                        border-color: #22af46;
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    td{
+                                        
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                    .deductions{
+                        table{
+                            thead{
+                                tr{
+                                    th{
+                                        color: #fff;
+                                        background-color: #de4848;
+                                        border-color: #de4848;
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    td{
+
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+                .payslip-footer{
+                    .note{
+                        color: #444;
+                        h4{
+
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                    .footer-info{
+                        text-align: right;
+                        color: #444;
+                        span{
+                            display: block;
+                            font-size: 14px;
+                        }
+                        h5{
+                            margin-top: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

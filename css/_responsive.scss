@@ -1,0 +1,121 @@
+@media only screen and(min-width:1200px){
+    #main-content{
+        width: calc(100% - 250px);
+        .sidebar-arrow{
+            display: inline-block;
+        }
+    }
+    #sidebar{
+        left: 5px;
+    }
+    }
+@media only screen and (max-width: 1200px) {
+    body {
+        nav{
+            .navbar-toggle{
+                display: inline-block;
+            }
+            .navbar-right{
+                display: flex;
+                flex-basis: auto;
+                flex-direction: row;
+                .my-search-form{
+
+                }
+                .navbar-nav{
+                    flex-direction: row;
+                }
+            }
+        }
+        #main-content{
+            width: 100% ;
+            .sidebar-arrow{
+                display: none;
+            }
+        }
+        #sidebar{
+            left: -250px ;
+        }   
+    }
+    
+}
+
+@media only screen and(max-width:1024px){
+    nav{
+        justify-content: flex-start !important;
+        align-items: center;
+        .navbar-right{
+            flex-basis: 100% !important;
+        }
+        .navbar-brand{
+            margin: 0px;        
+        }
+        .my-search-form{
+            margin-left: 15px;
+        }
+    }
+}
+@media only screen and(max-width:992px){
+    nav{
+        .navbar-right{
+            flex-basis: 0 !important;
+            flex-grow: 1;
+            .navbar-nav{
+                    .new-notification{
+                        &::before{
+                            top: 7px !important;
+                            right: -7px !important;
+                        }
+                       
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .my-search-form{
+        display: none;
+    }
+    .navbar-right{
+        flex-direction: row-reverse !important;
+        .bell-menu{
+            width: calc(100% - 20px) !important;
+            right: 0 !important;
+            margin: 0 10px;
+        }
+        .equalizer-menu{
+            width: calc(100% - 20px) !important;
+            right: 0 !important;
+            margin: 0 10px;
+        }
+    }
+    .account-count{
+        .col-md-4{
+            width: 33.33% !important;
+        
+        }
+    }
+}
+@media only screen and(max-width:440px){
+    nav{
+        .navbar-toggle{
+            i{
+                font-size: 18px !important;
+            }
+        }
+        .navbar-brand{
+            margin-left: 8px;
+            width: 75px;
+        }
+        .navbar-right{
+            .navbar-nav{
+                .nav-item{
+                    margin: 0 5px;
+                    i{
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+}

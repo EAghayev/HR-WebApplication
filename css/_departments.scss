@@ -1,0 +1,104 @@
+.main{
+    #main-content{
+        .main-content-items{
+            #department-list{
+                padding: 20px;
+                background: white;
+                padding-top: 16px;
+                border-radius: 8px;
+                select{
+                    font-size: 16px;
+                    &:focus{
+                        box-shadow: none;
+                        border-color: $gray-color;
+                    }
+                }
+                #DataTables_Table_0_filter{
+                    input{
+                        &:focus{
+                            box-shadow: none;
+                            border-color: $gray-color;
+                        }
+                    }
+                }
+                .list-header{
+                    color: #444;
+                    margin-bottom: 30px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h6{
+                        display: inline-block;
+                    }
+                    button{
+                        padding: 5px 10px;
+                        font-size: 14px;
+                    }
+                }
+            
+                table{
+                    thead{
+                        font-size: 14px;
+                        th{
+                            &:first-child{
+                                width: 60px;
+                            }
+                        }
+                    }
+                    tbody{
+                        color: #444;
+                        font-weight: 400;
+                        tr{
+                            td{
+                                font-weight: 400;
+                                padding: 12px;
+                                margin: auto;
+                                font-size: 14px;
+                                // line-height: 35px;   
+                                &:nth-child(2){
+                                    // line-height: 20px;
+
+                                }
+                                a{
+                                    padding: 6px 8px;
+                                    border: 1px solid gray;
+                                    border-radius: 4px;
+                                    i{
+                                        font-size: 12px !important;
+                                        color: gray;
+                                       
+                                    }
+                                    &:nth-child(2){
+                                        border-color: red;
+                                        i{
+                                            color: red;
+                                        }
+                                    }
+                                }
+                                .profile-img{
+                                    display: inline-block;
+                                    img{
+                                        width: 40px;
+                                        border: 1px solid #fff;
+                                        border-radius: 50%;
+                                        box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.2);
+                                    }
+                                }
+                                h6{
+                                    margin: 0;
+                                }
+                                span{
+                                    font-size: 14px;
+                                }
+                            }
+                            &:nth-child(odd){
+                                background-color: rgba(0,0,0,.05);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

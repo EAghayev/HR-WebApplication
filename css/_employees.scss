@@ -1,0 +1,189 @@
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    overflow: hidden;
+    outline: 0;
+    padding-right: 17px;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.45);
+    .modal-overlay{
+        display: none;
+        position: relative;
+        display: block;
+        max-width: 500px;   
+        margin: 28px auto;
+        .employee-modal{
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+            background: white;
+            border-radius: 8px;
+            .modal-header{
+                padding: 16px;
+                border-bottom: 1px solid #e9ecef;
+                h5{
+                    color: $darkgray-color;
+                    font-size: 16px;
+                    font-weight: 500;
+                }   
+            }
+            form{
+                h6{
+                    color: $darkgray-color;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .form-content{
+                    padding: 16px;
+                    padding-bottom: 0;
+                }
+                input{
+                    font-size: 14px;
+                }
+                .event-add-buttons{
+                    border-top: 1px solid #e9ecef;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 16px;
+                    button{
+                        margin-left: 8px;
+                        font-size: 14px;
+                    }
+                }
+              
+            }
+        }
+    }
+}
+.main{
+    #main-content{
+        .main-content-items{
+            #employee-list{
+                padding: 20px;
+                background: white;
+                padding-top: 16px;
+                border-radius: 8px;
+                select{
+                    font-size: 16px;
+                    &:focus{
+                        box-shadow: none;
+                        border-color: $gray-color;
+                    }
+                }
+                #DataTables_Table_0_filter{
+                    input{
+                        &:focus{
+                            box-shadow: none;
+                            border-color: $gray-color;
+                        }
+                    }
+                }
+                .list-header{
+                    color: #444;
+                    margin-bottom: 30px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h6{
+                        display: inline-block;
+                    }
+                    button{
+                        padding: 5px 10px;
+                        font-size: 14px;
+                    }
+                }
+                // .employee-selectbox{
+                //     color: #444;
+                //     span{
+    
+                //     }
+                //     select{
+                //         font-size: 14px;
+                //         border-radius: 5px;
+                //         padding: 7px 10px;
+                //         border-color: $whitegray-color;
+                //     }
+                // }
+                // .employee-search{
+                //     color: #444;
+                //     display: flex;
+                //     justify-content: flex-end;
+                //     margin: 0;
+                //     span{
+                //         font-size: 14px;
+                //         line-height: 36px;
+                //         margin-right: 4px;
+                //     }
+                //     input{
+                //         height: 35px;
+                //         width: 210px;
+                //     }
+                // }
+                table{
+                    thead{
+                        font-size: 14px;
+                        th{
+                            &:first-child{
+                                width: 60px;
+                            }
+                        }
+                    }
+                    tbody{
+                        color: #444;
+                        tr{
+                            td{
+                                padding: 12px;
+                                margin: auto;
+                                line-height: 35px;   
+                                &:nth-child(2){
+                                    line-height: 20px;
+                                }
+                                a{
+                                    padding: 6px 8px;
+                                    border: 1px solid gray;
+                                    border-radius: 4px;
+                                    i{
+                                        font-size: 14px;
+                                        color: gray;
+                                       
+                                    }
+                                    &:nth-child(2){
+                                        border-color: red;
+                                        i{
+                                            color: red;
+                                        }
+                                    }
+                                }
+                                .profile-img{
+                                    display: inline-block;
+                                    img{
+                                        width: 40px;
+                                        border: 1px solid #fff;
+                                        border-radius: 50%;
+                                        box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.2);
+                                    }
+                                }
+                                h6{
+                                    margin: 0;
+                                }
+                                span{
+                                    font-size: 14px;
+                                }
+                            }
+                            &:nth-child(odd){
+                                background-color: rgba(0,0,0,.05);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

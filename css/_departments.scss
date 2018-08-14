@@ -1,3 +1,48 @@
+.modal{
+    .modal-overlay{
+        .department-modal{
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+            background: white;
+            border-radius: 8px;
+            .department-modal-header{
+                padding: 16px;
+                border-bottom: 1px solid #e9ecef;  
+                h5{
+                    color: $darkgray-color;
+                    font-size: 16px;
+                    font-weight: 500;
+                }   
+            }
+            form{
+                h6{
+                    color: $darkgray-color;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .form-content{
+                    padding: 16px;
+                    padding-bottom: 0;
+                }
+                input{
+                    font-size: 14px;
+                }
+                .event-add-buttons{
+                    border-top: 1px solid #e9ecef;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 16px;
+                    button{
+                        margin-left: 8px;
+                        font-size: 14px;
+                    }
+                }
+              
+            }
+        }
+    }
+}
 .main{
     #main-content{
         .main-content-items{

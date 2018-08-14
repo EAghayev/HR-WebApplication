@@ -96,6 +96,40 @@ a {
   #calendar .bg-dark:hover {
     background: #1d2124 !important; }
 
+#data-table_length select {
+  height: 36px;
+  width: 70px; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  outline: 0;
+  padding-right: 17px;
+  display: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.45); }
+  .modal .modal-overlay {
+    display: none;
+    position: relative;
+    display: block;
+    max-width: 500px;
+    margin: 28px auto; }
+
+.modal-add-buttons {
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px; }
+  .modal-add-buttons button {
+    margin-left: 8px;
+    font-size: 14px; }
+
 nav {
   display: flex;
   justify-content: space-between !important;
@@ -824,51 +858,31 @@ nav {
     margin: 0 5px; }
     nav .navbar-right .navbar-nav .nav-item i {
       font-size: 16px !important; } }
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  overflow: hidden;
-  outline: 0;
-  padding-right: 17px;
-  display: none;
+.modal .modal-overlay .event-modal {
   overflow-x: hidden;
   overflow-y: auto;
-  background: rgba(0, 0, 0, 0.45); }
-  .modal .modal-overlay {
-    display: none;
-    position: relative;
-    display: block;
-    max-width: 500px;
-    margin: 28px auto; }
-    .modal .modal-overlay .event-modal {
-      overflow-x: hidden;
-      overflow-y: auto;
-      position: relative;
-      background: white;
-      border-radius: 8px; }
-      .modal .modal-overlay .event-modal .modal-header {
-        padding: 16px;
-        border-bottom: 1px solid #e9ecef; }
-        .modal .modal-overlay .event-modal .modal-header h3 {
-          color: #5A5A5A;
-          font-size: 26px; }
-      .modal .modal-overlay .event-modal form .form-content {
-        padding: 16px;
-        padding-bottom: 0; }
-      .modal .modal-overlay .event-modal form input {
-        font-size: 14px; }
-      .modal .modal-overlay .event-modal form .event-add-buttons {
-        border-top: 1px solid #e9ecef;
-        display: flex;
-        justify-content: flex-end;
-        padding: 16px; }
-        .modal .modal-overlay .event-modal form .event-add-buttons button {
-          margin-left: 8px;
-          font-size: 14px; }
+  position: relative;
+  background: white;
+  border-radius: 8px; }
+  .modal .modal-overlay .event-modal .event-modal-header {
+    padding: 16px;
+    border-bottom: 1px solid #e9ecef; }
+    .modal .modal-overlay .event-modal .event-modal-header h3 {
+      color: #5A5A5A;
+      font-size: 26px; }
+  .modal .modal-overlay .event-modal form .form-content {
+    padding: 16px;
+    padding-bottom: 0; }
+  .modal .modal-overlay .event-modal form input {
+    font-size: 14px; }
+  .modal .modal-overlay .event-modal form .modal-add-buttons {
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px; }
+    .modal .modal-overlay .event-modal form .modal-add-buttons button {
+      margin-left: 8px;
+      font-size: 14px; }
 
 #main-content .add-event {
   margin-bottom: 30px;
@@ -913,56 +927,36 @@ nav {
           #main-content .events .events-list li .event-content small i {
             margin-right: 4px; }
 
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  overflow: hidden;
-  outline: 0;
-  padding-right: 17px;
-  display: none;
+.modal .modal-overlay .employee-modal {
   overflow-x: hidden;
   overflow-y: auto;
-  background: rgba(0, 0, 0, 0.45); }
-  .modal .modal-overlay {
-    display: none;
-    position: relative;
-    display: block;
-    max-width: 500px;
-    margin: 28px auto; }
-    .modal .modal-overlay .employee-modal {
-      overflow-x: hidden;
-      overflow-y: auto;
-      position: relative;
-      background: white;
-      border-radius: 8px; }
-      .modal .modal-overlay .employee-modal .modal-header {
-        padding: 16px;
-        border-bottom: 1px solid #e9ecef; }
-        .modal .modal-overlay .employee-modal .modal-header h5 {
-          color: #5A5A5A;
-          font-size: 16px;
-          font-weight: 500; }
-      .modal .modal-overlay .employee-modal form h6 {
-        color: #5A5A5A;
-        font-size: 14px;
-        font-weight: 500; }
-      .modal .modal-overlay .employee-modal form .form-content {
-        padding: 16px;
-        padding-bottom: 0; }
-      .modal .modal-overlay .employee-modal form input {
-        font-size: 14px; }
-      .modal .modal-overlay .employee-modal form .event-add-buttons {
-        border-top: 1px solid #e9ecef;
-        display: flex;
-        justify-content: flex-end;
-        padding: 16px; }
-        .modal .modal-overlay .employee-modal form .event-add-buttons button {
-          margin-left: 8px;
-          font-size: 14px; }
+  position: relative;
+  background: white;
+  border-radius: 8px; }
+  .modal .modal-overlay .employee-modal .employee-modal-header {
+    padding: 16px;
+    border-bottom: 1px solid #e9ecef; }
+    .modal .modal-overlay .employee-modal .employee-modal-header h5 {
+      color: #5A5A5A;
+      font-size: 16px;
+      font-weight: 500; }
+  .modal .modal-overlay .employee-modal form h6 {
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 500; }
+  .modal .modal-overlay .employee-modal form .form-content {
+    padding: 16px;
+    padding-bottom: 0; }
+  .modal .modal-overlay .employee-modal form input {
+    font-size: 14px; }
+  .modal .modal-overlay .employee-modal form .event-add-buttons {
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px; }
+    .modal .modal-overlay .employee-modal form .event-add-buttons button {
+      margin-left: 8px;
+      font-size: 14px; }
 
 .main #main-content .main-content-items #employee-list {
   padding: 20px;
@@ -1023,8 +1017,37 @@ nav {
         margin: 0; }
       .main #main-content .main-content-items #employee-list table tbody tr td span {
         font-size: 14px; }
-    .main #main-content .main-content-items #employee-list table tbody tr:nth-child(odd) {
-      background-color: rgba(0, 0, 0, 0.05); }
+
+.modal .modal-overlay .department-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  background: white;
+  border-radius: 8px; }
+  .modal .modal-overlay .department-modal .department-modal-header {
+    padding: 16px;
+    border-bottom: 1px solid #e9ecef; }
+    .modal .modal-overlay .department-modal .department-modal-header h5 {
+      color: #5A5A5A;
+      font-size: 16px;
+      font-weight: 500; }
+  .modal .modal-overlay .department-modal form h6 {
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 500; }
+  .modal .modal-overlay .department-modal form .form-content {
+    padding: 16px;
+    padding-bottom: 0; }
+  .modal .modal-overlay .department-modal form input {
+    font-size: 14px; }
+  .modal .modal-overlay .department-modal form .event-add-buttons {
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px; }
+    .modal .modal-overlay .department-modal form .event-add-buttons button {
+      margin-left: 8px;
+      font-size: 14px; }
 
 .main #main-content .main-content-items #department-list {
   padding: 20px;
@@ -1141,5 +1164,62 @@ nav {
       font-size: 14px; }
     .main #main-content .main-content-items #paylslip .payslip-footer .footer-info h5 {
       margin-top: 16px; }
+
+.modal .modal-overlay .request-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  background: white;
+  border-radius: 8px; }
+  .modal .modal-overlay .request-modal .request-modal-header {
+    padding: 16px;
+    border-bottom: 1px solid #e9ecef; }
+    .modal .modal-overlay .request-modal .request-modal-header h5 {
+      color: #5A5A5A;
+      font-size: 16px;
+      font-weight: 500; }
+  .modal .modal-overlay .request-modal form {
+    background: white; }
+    .modal .modal-overlay .request-modal form h6 {
+      color: #5A5A5A;
+      font-size: 14px;
+      font-weight: 500; }
+    .modal .modal-overlay .request-modal form .form-content {
+      padding: 16px;
+      padding-bottom: 0; }
+    .modal .modal-overlay .request-modal form input {
+      font-size: 14px; }
+    .modal .modal-overlay .request-modal form .request-add-buttons {
+      border-top: 1px solid #e9ecef;
+      display: flex;
+      justify-content: flex-end;
+      padding: 16px; }
+      .modal .modal-overlay .request-modal form .request-add-buttons button {
+        margin-left: 8px;
+        font-size: 14px; }
+
+#attendance-list {
+  background: white;
+  padding: 20px;
+  border-radius: 8px; }
+  #attendance-list table thead tr th {
+    text-align: center;
+    font-size: 14px; }
+    #attendance-list table thead tr th span {
+      display: inline-block; }
+  #attendance-list table tbody tr td {
+    text-align: center; }
+
+.weekend1 {
+  background: #ebf2e8; }
+
+.weekend2 {
+  background: #ffd4c3 !important; }
+
+.icon-check {
+  color: green; }
+
+.icon-close {
+  color: #720808; }
 
 /*# sourceMappingURL=style.css.map */

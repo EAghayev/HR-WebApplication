@@ -268,9 +268,9 @@ $(window).click(function(e){
                 }
 
 //=============================================================================
-//Add event 
+//Add event modal
 //=============================================================================
-$("#add-new-event").click(function(){
+$("#modal-add-new").click(function(){
     $(".modal").css("display","block")
     $(".modal-overlay").css("display","block")
     $("body").css("overflow","hidden")
@@ -284,9 +284,23 @@ $(".close-modal").click(function(e){
 })
 
 //=============================================================================
-//Add employee 
+//Add employee modal
 //=============================================================================
-$("#add-new-employee").click(function(){
+$("#modal-add-new").click(function(){
+    $(".modal").css("display","block")
+    $(".modal-overlay").css("display","block")
+    $("body").css("overflow","hidden")
+})
+$(".close-modal").click(function(e){
+    e.preventDefault()
+    $(".modal").css("display","none")
+    $(".modal-overlay").css("display","none")
+    $("body").css("overflow","auto")
+})
+//=============================================================================
+//Add request modal
+//=============================================================================
+$("#modal-add-new").click(function(){
     $(".modal").css("display","block")
     $(".modal-overlay").css("display","block")
     $("body").css("overflow","hidden")
@@ -298,6 +312,21 @@ $(".close-modal").click(function(e){
     $("body").css("overflow","auto")
 })
 
+
+//=============================================================================
+//Attendance List icons
+//=============================================================================
+
+if($("#attendance-list").length){
+    $("#attendance-list td").click(function(){
+        if($(this).find("i").hasClass("icon-close")){
+            $(this).find("i").removeClass("icon-close").addClass("icon-check")
+        }
+        else{
+            $(this).find("i").removeClass("icon-check").addClass("icon-close")
+        }
+    })
+}
 
 })
 

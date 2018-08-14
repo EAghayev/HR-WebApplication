@@ -1,32 +1,14 @@
 .modal{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1050;
-    overflow: hidden;
-    outline: 0;
-    padding-right: 17px;
-    display: none;
-    overflow-x: hidden;
-    overflow-y: auto;
-    background: rgba(0, 0, 0, 0.45);
     .modal-overlay{
-        display: none;
-        position: relative;
-        display: block;
-        max-width: 500px;   
-        margin: 28px auto;
         .employee-modal{
             overflow-x: hidden;
             overflow-y: auto;
             position: relative;
             background: white;
             border-radius: 8px;
-            .modal-header{
+            .employee-modal-header{
                 padding: 16px;
-                border-bottom: 1px solid #e9ecef;
+                border-bottom: 1px solid #e9ecef;  
                 h5{
                     color: $darkgray-color;
                     font-size: 16px;
@@ -177,9 +159,9 @@
                                     font-size: 14px;
                                 }
                             }
-                            &:nth-child(odd){
-                                background-color: rgba(0,0,0,.05);
-                            }
+                            // &:nth-child(odd){
+                            //     background-color: rgba(0,0,0,.05);
+                            // }
                         }
                     }
                 }

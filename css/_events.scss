@@ -1,30 +1,12 @@
 .modal{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1050;
-    overflow: hidden;
-    outline: 0;
-    padding-right: 17px;
-    display: none;
-    overflow-x: hidden;
-    overflow-y: auto;
-    background: rgba(0, 0, 0, 0.45);
     .modal-overlay{
-        display: none;
-        position: relative;
-        display: block;
-        max-width: 500px;   
-        margin: 28px auto;
         .event-modal{
             overflow-x: hidden;
             overflow-y: auto;
             position: relative;
             background: white;
             border-radius: 8px;
-            .modal-header{
+            .event-modal-header{
                 padding: 16px;
                 border-bottom: 1px solid #e9ecef;
                 h3{
@@ -40,7 +22,7 @@
                 input{
                     font-size: 14px;
                 }
-                .event-add-buttons{
+                .modal-add-buttons{
                     border-top: 1px solid #e9ecef;
                     display: flex;
                     justify-content: flex-end;

@@ -1,0 +1,39 @@
+#attendance-list{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    table{
+        thead{
+            tr{
+                th{
+                    text-align: center;
+                    // display: inline-block;
+                    font-size: 14px;
+                    span{
+                        display: inline-block;
+                    }
+
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.weekend1{
+    background: #ebf2e8;
+}
+.weekend2{
+    background: #ffd4c3 !important;
+}
+.icon-check{
+    color: green;
+}
+.icon-close{
+    color: rgb(114, 8, 8);
+}

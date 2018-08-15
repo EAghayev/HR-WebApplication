@@ -373,7 +373,7 @@
                                     <!-- <div class="main-chart" >
                                         <canvas id="chart-visitors" style="width: 160px"></canvas>
                                     </div> -->
-                                    <span id="sparkline-visitors" class="sparkline" >&nbsp;</span>
+                                    <span id="sparkline-visitors" class="sparkline">&nbsp;</span>
                                 </div>
                                 <div class="header-chart">
                                     <div class="chart-info">
@@ -444,6 +444,29 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
+                                    <div class="income-box text-center">
+                                        <div class="income-header text-center mb-3">
+                                            <h5>
+                                                Income Analysis
+                                            </h5>
+                                            <span>8% High then last month</span>
+                                        </div>
+                                        <span id="sparkline-income" class="sparkline">&nbsp;</span>
+                                        <ul class="income-reports mt-3">
+                                            <li>
+                                                <span class="report-header">Design</span>
+                                                <b class="report-value">84.60%</b>
+                                            </li>
+                                            <li>
+                                                <span class="report-header">Dev</span>
+                                                <b class="report-value">15.40%</b>
+                                            </li>
+                                            <li>
+                                                <span class="report-header">SEO</span>
+                                                <b class="report-value">5.10%</b>
+                                            </li>
+                                        </ul>
+                                    </div>
 
                                 </div>
                             </div>
@@ -542,13 +565,17 @@
                                                 <label>New Joing Employee Welcome kit</label>
                                             </div>
                                         </div>
-                                    <ul>
-                                        <li><a href="#">Jhon Smith</a> Designer</li>
-                                        <li><a href="#">Hossein Shams</a> Developer</li>
-                                        <li><a href="#">Maryam Amiri</a> SEO</li>
-                                        <li><a href="#">Mike Literus</a> İOS Developer</li>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Jhon Smith</a> Designer</li>
+                                            <li>
+                                                <a href="#">Hossein Shams</a> Developer</li>
+                                            <li>
+                                                <a href="#">Maryam Amiri</a> SEO</li>
+                                            <li>
+                                                <a href="#">Mike Literus</a> İOS Developer</li>
 
-                                    </ul>
+                                        </ul>
                                     </li>
                                     <li>
                                         <div class="pretty p-svg p-curve to-do-checkbox">
@@ -566,7 +593,7 @@
                                     </li>
                                 </ul>
                             </div>
-                           
+
                         </div>
                     </div>
                     <div class="row clearfix">
@@ -578,64 +605,88 @@
                                 <table class="table">
                                     <thead class="thead-dark">
                                         <tr>
-                                                <th>Avatar</th>
-                                                <th>Name</th>
-                                                <th>Designation</th>
-                                                <th>Performance</th>
-                                                <th></th>
+                                            <th>Avatar</th>
+                                            <th>Name</th>
+                                            <th>Designation</th>
+                                            <th>Performance</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><img src="images/xs/avatar1.jpg" alt=""></td>
+                                            <td>
+                                                <img src="images/xs/avatar1.jpg" alt="">
+                                            </td>
                                             <td>Marshall Nichols</td>
                                             <td>UI UX Designer</td>
-                                            <td><span class="mybadge mybadge-success">GOOD</span></td>
-                                            <td><span class="sparkline-employee" data-id="1" class="sparkline" >&nbsp;</span></td>
+                                            <td>
+                                                <span class="mybadge mybadge-success">GOOD</span>
+                                            </td>
+                                            <td>
+                                                <span class="sparkline-employee" data-id="1" class="sparkline">&nbsp;</span>
+                                            </td>
                                         </tr>
                                         <tr>
-                                                <td><img src="images/xs/avatar1.jpg" alt=""></td>
-                                                <td>Marshall Nichols</td>
-                                                <td>UI UX Designer</td>
-                                                <td><span class="mybadge mybadge-primary">Excelent</span></td>
-                                                 <td><span class="sparkline-employee" data-id="2" class="sparkline" >&nbsp;</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="images/xs/avatar1.jpg" alt=""></td>
+                                            <td>
+                                                <img src="images/xs/avatar1.jpg" alt="">
+                                            </td>
                                             <td>Marshall Nichols</td>
                                             <td>UI UX Designer</td>
-                                            <td><span class="mybadge mybadge-danger">WEAK</span></td>
-                                            <td><span class="sparkline-employee" data-id="3" class="sparkline" >&nbsp;</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="images/xs/avatar1.jpg" alt=""></td>
-                                        <td>Marshall Nichols</td>
-                                        <td>UI UX Designer</td>
-                                        <td><span class="mybadge mybadge-warning">AVERAGE</span></td>
-                                        <td><span class="sparkline-employee" data-id="4" class="sparkline" >&nbsp;</span></td>
-                                </tr>
+                                            <td>
+                                                <span class="mybadge mybadge-primary">Excelent</span>
+                                            </td>
+                                            <td>
+                                                <span class="sparkline-employee" data-id="2" class="sparkline">&nbsp;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="images/xs/avatar1.jpg" alt="">
+                                            </td>
+                                            <td>Marshall Nichols</td>
+                                            <td>UI UX Designer</td>
+                                            <td>
+                                                <span class="mybadge mybadge-danger">WEAK</span>
+                                            </td>
+                                            <td>
+                                                <span class="sparkline-employee" data-id="3" class="sparkline">&nbsp;</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="images/xs/avatar1.jpg" alt="">
+                                            </td>
+                                            <td>Marshall Nichols</td>
+                                            <td>UI UX Designer</td>
+                                            <td>
+                                                <span class="mybadge mybadge-warning">AVERAGE</span>
+                                            </td>
+                                            <td>
+                                                <span class="sparkline-employee" data-id="4" class="sparkline">&nbsp;</span>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12">
-                                <div class="progress-bars">
-                                    <h6>Employee Structure</h6>
-                                        <div class="progress-bar-block">
-                                            <span>Male</span>
-                                                <div class="progress-circle" id="circle-first"  class="circle" data-value="0.9">
-                                                        <strong style=" color: rgb(73, 169, 229);"></strong>
-                                                    </div>
-                                                    <hr>
-                                        </div>
-                                       <div class="progress-bar-block">
-                                           <span>Female</span>
-                                            <div class="progress-circle"  id="circle-second" data-value="0.75">
-                                                    <strong style="color: rgb(184, 128, 225);"></strong>
-                                                </div>
-                                       </div>
-                                   
+                            <div class="progress-bars">
+                                <h6>Employee Structure</h6>
+                                <div class="progress-bar-block">
+                                    <span>Male</span>
+                                    <div class="progress-circle" id="circle-first" class="circle" data-value="0.9">
+                                        <strong style=" color: rgb(73, 169, 229);"></strong>
                                     </div>
+                                    <hr>
+                                </div>
+                                <div class="progress-bar-block">
+                                    <span>Female</span>
+                                    <div class="progress-circle" id="circle-second" data-value="0.75">
+                                        <strong style="color: rgb(184, 128, 225);"></strong>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -665,10 +716,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.js"></script>
     <script src="js/mysparklinecharts.js"></script>
-        <!--ProgressBar-->
-        <script src="jquery-circle-progress-1.2.2/dist/circle-progress.js"></script>
-        <script src="jquery-circle-progress-1.2.2/dist/circle-progress.min.js"></script>
-        <script src="jquery-circle-progress-1.2.2/docs/examples.js"></script>
+    <!--ProgressBar-->
+    <script src="jquery-circle-progress-1.2.2/dist/circle-progress.js"></script>
+    <script src="jquery-circle-progress-1.2.2/dist/circle-progress.min.js"></script>
+    <script src="jquery-circle-progress-1.2.2/docs/examples.js"></script>
     <script src="js/main.js"></script>
 
 </body>

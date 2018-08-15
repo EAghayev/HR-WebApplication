@@ -114,6 +114,36 @@
                     }
                 }
             }
+            .income-box{
+                padding: 20px;
+                background: white;
+                border-radius: 8px; 
+                .income-header{
+                    color: #444;
+                    h5{
+
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                }
+                .income-reports{
+                    display: flex;
+                    padding: 0 12px;
+                    justify-content: space-between;
+                    color: #444;
+                    li{
+                        .report-header{
+                            font-size: 13px;
+                            display: block;
+                        }
+                        .report-value{
+                            font-size: 14px;
+                            display: block;
+                        }
+                    }
+                }
+            }
             .mystacked-bar{
                 border-radius: 8px;
                 padding:20px;

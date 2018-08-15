@@ -16,6 +16,24 @@
                 }   
             }
             form{
+                .gender-text{
+                    width: 100%;
+                    color: gray;
+                }
+                .gender{
+                    width:18%;
+                    display:flex;
+                    align-items:center;
+                    margin-left: 8px;
+                    cursor: pointer;
+                    &:first-child{
+                        border-right: 1px solid #444;
+                    }
+                    input{
+                        width: 10px;
+                        margin-left: 3px;
+                    }
+                }
                 h6{
                     color: $darkgray-color;
                     font-size: 14px;

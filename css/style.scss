@@ -175,6 +175,10 @@ a{
         font-size: 14px;
     }
 }
+.form-control:focus{
+    box-shadow:none !important;
+    border-color:#444;
+}
 
 @import 'navbar';
 @import 'sidebar';

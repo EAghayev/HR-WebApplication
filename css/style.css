@@ -130,6 +130,10 @@ a {
     margin-left: 8px;
     font-size: 14px; }
 
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #444; }
+
 nav {
   display: flex;
   justify-content: space-between !important;
@@ -165,7 +169,8 @@ nav {
         font-size: 14px;
         padding: 8px 10px;
         padding-left: 20px;
-        width: 218px; }
+        width: 218px;
+        transition: all 0.3s; }
         nav .navbar-right .my-search-form input:focus {
           outline: none;
           box-shadow: none;
@@ -564,6 +569,25 @@ nav {
             color: #444; }
       #main-content .myfluid .main-content-items .content-counters .counter-box hr {
         margin: 16px 0; }
+  #main-content .myfluid .main-content-items .income-box {
+    padding: 20px;
+    background: white;
+    border-radius: 8px; }
+    #main-content .myfluid .main-content-items .income-box .income-header {
+      color: #444; }
+      #main-content .myfluid .main-content-items .income-box .income-header span {
+        font-size: 14px; }
+    #main-content .myfluid .main-content-items .income-box .income-reports {
+      display: flex;
+      padding: 0 12px;
+      justify-content: space-between;
+      color: #444; }
+      #main-content .myfluid .main-content-items .income-box .income-reports li .report-header {
+        font-size: 13px;
+        display: block; }
+      #main-content .myfluid .main-content-items .income-box .income-reports li .report-value {
+        font-size: 14px;
+        display: block; }
   #main-content .myfluid .main-content-items .mystacked-bar {
     border-radius: 8px;
     padding: 20px;
@@ -875,14 +899,6 @@ nav {
     padding-bottom: 0; }
   .modal .modal-overlay .event-modal form input {
     font-size: 14px; }
-  .modal .modal-overlay .event-modal form .modal-add-buttons {
-    border-top: 1px solid #e9ecef;
-    display: flex;
-    justify-content: flex-end;
-    padding: 16px; }
-    .modal .modal-overlay .event-modal form .modal-add-buttons button {
-      margin-left: 8px;
-      font-size: 14px; }
 
 #main-content .add-event {
   margin-bottom: 30px;
@@ -940,6 +956,20 @@ nav {
       color: #5A5A5A;
       font-size: 16px;
       font-weight: 500; }
+  .modal .modal-overlay .employee-modal form .gender-text {
+    width: 100%;
+    color: gray; }
+  .modal .modal-overlay .employee-modal form .gender {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    cursor: pointer; }
+    .modal .modal-overlay .employee-modal form .gender:first-child {
+      border-right: 1px solid #444; }
+    .modal .modal-overlay .employee-modal form .gender input {
+      width: 10px;
+      margin-left: 3px; }
   .modal .modal-overlay .employee-modal form h6 {
     color: #5A5A5A;
     font-size: 14px;

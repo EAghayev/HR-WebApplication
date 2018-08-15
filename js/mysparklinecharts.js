@@ -118,3 +118,23 @@ $('.sparkline-employee').data("id","4").sparkline(values, {
         }
     },
 });
+
+var values = [44, 33, 22];
+
+// Draw a sparkline for the #sparkline element
+$('#sparkline-income').sparkline(values, {
+    type: "pie",
+    width: "147px",
+    height: "147px",
+    sliceColors: ["#ffcd55", "#02b5b2","#445771"],
+    tooltipFormatFieldlistKey: 'value',
+    // Map the offset in the list of values to a name to use in the tooltip
+    tooltipValueLookups: {
+
+        'offset': {
+            0: 'First',
+            1: 'Second',
+            2: 'Third'
+        }
+    },
+});

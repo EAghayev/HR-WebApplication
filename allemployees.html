@@ -36,56 +36,80 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-6">
-                                        <input type="text" name="Name" class="form-control" placeholder="Name">
+                                    <input type="text" name="Name" class="form-control" placeholder="Name">
                                 </div>
                                 <div class="col-md-6">
-                                        <input type="text" name="EmailId" class="form-control" placeholder="Email ID">
+                                    <input type="text" name="EmailId" class="form-control" placeholder="Email ID">
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="Phone" class="form-control" placeholder="Phone Number">
                         </div>
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-6">
-                                        <input type="text" name="EmployeeId" class="form-control" placeholder="Employee ID">
+                                    <input type="text" name="Phone" class="form-control" placeholder="Phone Number">
                                 </div>
-                                <div class="col-md-6">
-                                        <input type="text" name="Role" class="form-control" placeholder="Role">
+                                <div class="col-md-6 d-flex">
+                                    <div class="form-control d-flex justify-content-end">
+                                        <span class="gender-text">Gender</span>
+                                        <div class="gender">
+                                            <i class="fas fa-male"></i>
+                                            <input type="radio" name="Gender" class="gender-input" value="0" class="form-control" />
+                                        </div>
+                                        <div class="gender">
+                                            <i class="fas fa-male"></i>
+                                            <input type="radio" name="Gender" class="gender-input" value="1" class="form-control" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                                    <input type="date" name="JoinDate" class="form-control" placeholder="Joid Date">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="EmployeeId" class="form-control" placeholder="Employee ID">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="Role" class="form-control" placeholder="Role">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="JoinDate" data-provide="datepicker" class="form-control" placeholder="Joid Date">
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control" type="number" placeholder="Salary"/>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <input type="file" class="" id="InputFile" name="Profile">
                         </div>
                         <hr>
                         <h6>Socials</h6>
-                        <div class="form-group">    
+                        <div class="form-group">
                             <div class="row">
                                 <div class="col-md-6">
-                                        <input type="text" name="Facebook" class="form-control" placeholder="Facebook">
+                                    <input type="text" name="Facebook" class="form-control" placeholder="Facebook">
                                 </div>
                                 <div class="col-md-6">
-                                        <input type="text" name="Twitter" class="form-control" placeholder="Twitter">
+                                    <input type="text" name="Twitter" class="form-control" placeholder="Twitter">
                                 </div>
                             </div>
-                            </div>
-                            <div class="form-group">
-                            <div class="row">
-                                    <div class="col-md-6">
-                                            <input type="text" name="Linkedin" class="form-control" placeholder="Linkedin">
-                                    </div>
-                                    <div class="col-md-6">
-                                            <input type="text" name="Instagram" class="form-control" placeholder="Instagram">
-                                    </div>
-                                </div>
                         </div>
-                        
-                        
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="Linkedin" class="form-control" placeholder="Linkedin">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="Instagram" class="form-control" placeholder="Instagram">
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                     <div class="modal-add-buttons">
                         <button class="btn btn-primary" type="submit">Add</button>

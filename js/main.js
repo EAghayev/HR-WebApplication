@@ -140,7 +140,7 @@ $(window).click(function(e){
             $("tbody input").prop("checked",false); 
         }
     })
-
+    
      //===================================================================
     //Calendar
     //===================================================================
@@ -310,5 +310,13 @@ if($("#attendance-list").length){
     })
 }
 
+//=============================================================================
+//Select gender radio button in employee form
+//=============================================================================
+$(".gender").click(function () {
+var myinput=$(this).find("input");
+    myinput.prop("checked")==true?myinput.prop("checked",false):myinput.prop("checked",true)
+   console.log($(this).find("input").prop("checked"))
+})
 })
 

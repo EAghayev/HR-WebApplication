@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+    
 
 $(".mynav-toggler-btn").click(function(e){
     console.log(e.target)
@@ -125,6 +125,19 @@ $(window).click(function(e){
         }
         else{
             $(this).next().find("label").css("text-decoration","none")
+        }
+    })
+   
+    //==================================================================
+    //Check all employee 
+    //================================================================
+    $("#employee-checkbox-all").click(function(){
+        if($("#employee-checkbox-all").prop("checked")==true){
+            $("tbody input").prop("checked",true);
+        }
+        else{
+            console.log("aaaad")
+            $("tbody input").prop("checked",false); 
         }
     })
 
@@ -268,7 +281,7 @@ $(window).click(function(e){
                 }
 
 //=============================================================================
-//Add event modal
+//Add new in modal
 //=============================================================================
 $("#modal-add-new").click(function(){
     $(".modal").css("display","block")
@@ -282,37 +295,6 @@ $(".close-modal").click(function(e){
     $(".modal-overlay").css("display","none")
     $("body").css("overflow","auto")
 })
-
-//=============================================================================
-//Add employee modal
-//=============================================================================
-$("#modal-add-new").click(function(){
-    $(".modal").css("display","block")
-    $(".modal-overlay").css("display","block")
-    $("body").css("overflow","hidden")
-})
-$(".close-modal").click(function(e){
-    e.preventDefault()
-    $(".modal").css("display","none")
-    $(".modal-overlay").css("display","none")
-    $("body").css("overflow","auto")
-})
-//=============================================================================
-//Add request modal
-//=============================================================================
-$("#modal-add-new").click(function(){
-    $(".modal").css("display","block")
-    $(".modal-overlay").css("display","block")
-    $("body").css("overflow","hidden")
-})
-$(".close-modal").click(function(e){
-    e.preventDefault()
-    $(".modal").css("display","none")
-    $(".modal-overlay").css("display","none")
-    $("body").css("overflow","auto")
-})
-
-
 //=============================================================================
 //Attendance List icons
 //=============================================================================
